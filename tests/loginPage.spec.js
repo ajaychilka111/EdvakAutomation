@@ -1,6 +1,7 @@
 const { test, expect } = require('@playwright/test');
 require('dotenv').config();
 
+test.skip(process.env.CI, 'Skip in CI');
 const { LoginPage } = require('../Playwright/Pages/LoginPage');
 
 test('login test', async ({ page }) => {

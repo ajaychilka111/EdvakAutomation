@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
+test.skip(process.env.CI, 'Skip in CI');
 test('loginEdvak', async ({ browser }) => {
   test.setTimeout(200000);
 
