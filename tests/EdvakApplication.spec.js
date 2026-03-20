@@ -29,7 +29,7 @@ async function login(page) {
 
 async function createAppointment(page) {
   await page.locator("[name='patient_list']").click();
-  await page.waitForLoadState('networkidle');
+ // await page.waitForLoadState('networkidle');
   await page.locator("[id='edicon-77-mask0_129_2481']").click();
 
 }

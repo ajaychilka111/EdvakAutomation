@@ -14,6 +14,6 @@ test('login test', async ({ page }) => {
     process.env.TEST_PASSWORD
   );
   await loginPage.clickCreateAppointment();
-  await page.waitForLoadState('networkidle');
+  //await page.waitForLoadState('networkidle');
   
 });
