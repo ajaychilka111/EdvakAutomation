@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test.only('loginEdvak', async ({ browser }) => {
+test('loginEdvak', async ({ browser }) => {
   test.setTimeout(200000);
 
   const context = await browser.newContext({
